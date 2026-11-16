@@ -1,15 +1,15 @@
 # 🛡️ SOC Monitoring Platform | Wazuh & Suricata
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Domain-Cybersecurity-blue" />
-  <img src="https://img.shields.io/badge/Focus-SOC%20%7C%20Blue%20Team-green" />
-  <img src="https://img.shields.io/badge/SIEM-Wazuh-orange" />
-  <img src="https://img.shields.io/badge/IDS-Suricata-red" />
-  <img src="https://img.shields.io/badge/Platform-Linux-lightgrey" />
+  <img src="https://img.shields.io/badge/Domain-Cybersecurity-blue">
+  <img src="https://img.shields.io/badge/Focus-SOC%20%7C%20Blue%20Team-red">
+  <img src="https://img.shields.io/badge/SIEM-Wazuh-0054A6">
+  <img src="https://img.shields.io/badge/IDS-Suricata-orange">
+  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-green">
 </p>
 
 <p align="center">
-  <b>A Practical Security Operations Center (SOC) Laboratory</b>
+  <strong>A Practical Security Operations Center (SOC) Laboratory</strong>
 </p>
 
 ---
@@ -22,7 +22,7 @@ The main objective is to build a centralized security monitoring environment cap
 
 The laboratory integrates Windows and Linux endpoints with centralized security monitoring components to provide visibility into endpoint and network activities.
 
-## 🎯 2. Project Objectives
+### 🎯 Project Objectives
 
 - Deploy and configure a centralized Wazuh SIEM platform.
 - Integrate Windows and Linux endpoints.
@@ -34,62 +34,59 @@ The laboratory integrates Windows and Linux endpoints with centralized security 
 - Analyze security alerts and investigate suspicious activities.
 - Develop practical SOC monitoring and incident investigation skills.
 
-## 🏗️ 3. SOC Architecture
+---
 
-The laboratory is designed around centralized security monitoring.
+## 🏗️ 2. SOC Architecture
+
+The laboratory is designed around centralized security monitoring using Wazuh and Suricata.
+
+### Architecture Diagram
+
+The following diagram illustrates the architecture of the Security Operations Center (SOC) laboratory.
+
+<p align="center">
+  <img src="./images/architecture.png" 
+       alt="SOC Wazuh and Suricata Architecture" 
+       width="850">
+</p>
+
+<p align="center">
+  <em>Figure 1: SOC Architecture – Wazuh SIEM, Windows and Linux Endpoints, Sysmon, and Suricata IDS.</em>
+</p>
 
 ### Main Components
 
 | Component | Description |
 |---|---|
-| Wazuh Manager | Receives and analyzes endpoint security events. |
-| Wazuh Indexer | Stores and indexes security information. |
-| Wazuh Dashboard | Provides security monitoring and visualization. |
+| Wazuh Dashboard | Security monitoring and alert visualization. |
+| Wazuh Manager | Centralized agent management and security event analysis. |
+| Wazuh Indexer | Security event storage and indexing. |
 | Windows Endpoint | Generates Windows security events. |
 | Linux Endpoint | Generates Linux system and security events. |
-| Wazuh Agents | Forward endpoint events to the Wazuh Manager. |
+| Wazuh Agent | Forwards endpoint events to the Wazuh Manager. |
 | Sysmon | Provides detailed Windows system activity events. |
 | Suricata IDS | Monitors network traffic and generates intrusion detection alerts. |
 
-### Architecture Diagram
+---
 
-The following diagram illustrates the architecture of the Security Operations Center (SOC) laboratory based on Wazuh and Suricata.
-
-<p align="center">
-  <img src="images/architecture.png" alt="SOC Wazuh and Suricata Architecture" width="850"/>
-</p>
-
-<p align="center">
-  <em>Figure: SOC Architecture – Wazuh SIEM, Windows and Linux Endpoints, Sysmon, and Suricata IDS.</em>
-</p>
-
-**Architecture Components:**
-
-- **Wazuh Dashboard:** Security monitoring and alert visualization.
-- **Wazuh Manager:** Centralized agent management and security event analysis.
-- **Wazuh Indexer:** Security event storage and indexing.
-- **Windows Endpoint:** Monitored using Wazuh Agent and Sysmon.
-- **Linux Endpoint:** Monitored using Wazuh Agent and System Logs.
-- **Suricata IDS:** Network intrusion detection and traffic analysis.
-
-*Note: This diagram represents the conceptual architecture of the SOC laboratory.*
-
-## 🛠️ 4. Technologies & Tools
+## 🛠️ 3. Technologies & Tools
 
 | Technology | Purpose |
 |---|---|
-| Wazuh | Security Information and Event Management (SIEM) |
-| Suricata | Network Intrusion Detection System (IDS) |
-| Sysmon | Windows system activity monitoring |
-| Linux | Server administration and monitoring |
-| Windows | Endpoint security monitoring |
-| VirtualBox | Virtual laboratory environment |
-| PowerShell | Windows administration |
-| Bash | Linux administration |
+| Wazuh | Security Information and Event Management (SIEM). |
+| Suricata | Network Intrusion Detection System (IDS). |
+| Sysmon | Windows system activity monitoring. |
+| Linux | Server administration and monitoring. |
+| Windows | Endpoint security monitoring. |
+| VirtualBox | Virtual laboratory environment. |
+| PowerShell | Windows administration. |
+| Bash | Linux administration. |
 
-## ⚙️ 5. Implementation
+---
 
-### 5.1 Wazuh SIEM Deployment
+## ⚙️ 4. Implementation
+
+### 4.1 Wazuh SIEM Deployment
 
 Deployment of the Wazuh platform, including:
 
@@ -99,11 +96,11 @@ Deployment of the Wazuh platform, including:
 - Verification of Wazuh services.
 - Access to the centralized monitoring interface.
 
-### 5.2 Windows Endpoint Integration
+### 4.2 Windows Endpoint Integration
 
 Integration of a Windows endpoint with the Wazuh Manager.
 
-Activities:
+**Activities:**
 
 - Installation of the Wazuh Agent.
 - Configuration of the Wazuh Manager address.
@@ -111,11 +108,11 @@ Activities:
 - Windows security event collection.
 - Security policy auditing.
 
-### 5.3 Linux Endpoint Integration
+### 4.3 Linux Endpoint Integration
 
 Integration of a Linux endpoint with the Wazuh Manager.
 
-Activities:
+**Activities:**
 
 - Wazuh Agent installation.
 - Manager address configuration.
@@ -123,11 +120,11 @@ Activities:
 - Linux system log monitoring.
 - Agent connection verification.
 
-### 5.4 Windows Security Monitoring
+### 4.4 Windows Security Monitoring
 
 Configuration of Windows auditing policies to improve security event visibility.
 
-Monitored categories include:
+**Monitored categories include:**
 
 - Account Logon Events.
 - Logon Events.
@@ -136,37 +133,39 @@ Monitored categories include:
 - Policy Change.
 - Privilege Use.
 
-### 5.5 File Integrity Monitoring (FIM)
+### 4.5 File Integrity Monitoring (FIM)
 
 File Integrity Monitoring is configured to monitor selected directories.
 
-Monitored paths:
+**Monitored paths:**
 
-**Windows:**
+Windows:
+
 ```text
 C:\SOC-Test\
 ```
 
-**Linux:**
+Linux:
+
 ```text
 /home/user/SOC-Test/
 ```
 
 The objective is to identify file integrity changes and generate security events for investigation.
 
-### 5.6 Sysmon Integration
+### 4.6 Sysmon Integration
 
 Sysmon provides detailed information about Windows system activity.
 
-It can complement Windows event collection by providing additional information about processes and system events.
+It complements Windows event collection by providing additional information about processes and system events.
 
 The collected events can be used for security monitoring and investigation.
 
-### 5.7 Suricata IDS Deployment
+### 4.7 Suricata IDS Deployment
 
 Suricata is deployed as a network intrusion detection component.
 
-Main activities:
+**Main activities:**
 
 - Suricata installation.
 - Network interface configuration.
@@ -176,46 +175,52 @@ Main activities:
 
 Suricata event information can be found in:
 
-```text
+```bash
 /var/log/suricata/eve.json
 ```
 
-## 📊 6. Security Monitoring & Investigation
+---
+
+## 📊 5. Security Monitoring & Investigation
 
 The laboratory focuses on defensive security monitoring through:
 
 - Endpoint security event collection.
 - Windows and Linux log analysis.
-- File integrity monitoring.
-- Network intrusion detection.
+- File Integrity Monitoring.
+- Network Intrusion Detection.
 - Security alert investigation.
 - Identification of suspicious activities.
 
-## 📸 7. Screenshots & Evidence
+---
 
-Screenshots will document the actual deployment and configuration.
+## 📸 6. Screenshots & Evidence
+
+Screenshots document the actual deployment and configuration of the SOC laboratory.
 
 | Screenshot | Description |
 |---|---|
-| `wazuh-install.png` | Wazuh platform installation |
-| `agent_windows.png` | Windows Wazuh Agent |
-| `agent_linux.png` | Linux Wazuh Agent |
-| `audit_windows.png` | Windows audit policy |
-| `fim_config.png` | File Integrity Monitoring configuration |
-| `suricata_install.png` | Suricata installation |
-| `wazuh-dashboard.png` | Wazuh Dashboard |
+| `wazuh-install.png` | Wazuh platform installation. |
+| `agent_windows.png` | Windows Wazuh Agent. |
+| `agent_linux.png` | Linux Wazuh Agent. |
+| `audit_windows.png` | Windows audit policy. |
+| `fim_config.png` | File Integrity Monitoring configuration. |
+| `suricata_install.png` | Suricata installation. |
+| `wazuh-dashboard.png` | Wazuh Dashboard. |
 
-*Add the corresponding screenshots to a `screenshots/` directory as they become available.*
+All screenshots are stored in the `screenshots/` directory.
 
-## 📁 8. Repository Structure
+---
+
+## 📁 7. Repository Structure
 
 ```text
 SOC-Wazuh-Suricata-Lab/
 │
 ├── README.md
 │
-├── architecture/
-│   └── soc-architecture.png
+├── images/
+│   └── architecture.png
 │
 ├── screenshots/
 │   ├── wazuh-install.png
@@ -236,7 +241,9 @@ SOC-Wazuh-Suricata-Lab/
     └── configuration-guide.md
 ```
 
-## 📚 9. Skills Demonstrated
+---
+
+## 📚 8. Skills Demonstrated
 
 This project demonstrates practical knowledge in:
 
@@ -252,7 +259,9 @@ This project demonstrates practical knowledge in:
 - Linux System Administration.
 - Security Event Investigation.
 
-## 🔮 10. Future Improvements
+---
+
+## 🔮 9. Future Improvements
 
 Potential improvements for the laboratory include:
 
@@ -264,13 +273,20 @@ Potential improvements for the laboratory include:
 - Incident response documentation.
 - Security dashboards and reporting.
 
-## 👨‍💻 11. Author
+---
+
+## 👨‍💻 10. Author
 
 **Ahmed ELGHACHI**
 
 Master's Graduate in Cybersecurity
 
-Focus: Cyber Defense | SOC Operations | Blue Team | Cloud Security
+**Focus Areas:**
+- Cyber Defense
+- SOC Operations
+- Blue Team
+- Cloud Security
+- Network Security
 
 **GitHub:** [Ahmed-Elghachi](https://github.com/Ahmed-Elghachi)
 
@@ -287,5 +303,5 @@ All monitoring and security testing activities must be conducted on systems and 
 ---
 
 <p align="center">
-  <b>Building practical cybersecurity skills through defensive security engineering.</b>
+  <strong>Building practical cybersecurity skills through defensive security engineering.</strong>
 </p>
