@@ -53,41 +53,26 @@ The laboratory is designed around centralized security monitoring.
 
 ### Architecture Diagram
 
-Add your architecture diagram here:
+The following diagram illustrates the architecture of the Security Operations Center (SOC) laboratory based on Wazuh and Suricata.
 
-```text
-                 SECURITY OPERATIONS CENTER
-                            |
-                   +------------------+
-                   |  Wazuh Dashboard |
-                   +------------------+
-                            |
-                   +------------------+
-                   |   Wazuh Manager  |
-                   +------------------+
-                            |
-                   +------------------+
-                   |  Wazuh Indexer   |
-                   +------------------+
-                            |
-             +--------------+--------------+
-             |                             |
-      +-------------+               +-------------+
-      |   Windows   |               |    Linux    |
-      |   Endpoint  |               |   Endpoint  |
-      +-------------+               +-------------+
-      | Wazuh Agent |               | Wazuh Agent |
-      |   Sysmon    |               | System Logs |
-      +-------------+               +-------------+
+<p align="center">
+  <img src="images/architecture.png" alt="SOC Wazuh and Suricata Architecture" width="850"/>
+</p>
 
-                   +------------------+
-                   |   Suricata IDS   |
-                   +------------------+
-                            |
-                     Network Monitoring
-```
+<p align="center">
+  <em>Figure: SOC Architecture – Wazuh SIEM, Windows and Linux Endpoints, Sysmon, and Suricata IDS.</em>
+</p>
 
-*Note: This is a conceptual diagram. The actual network topology and Suricata integration depend on the laboratory configuration.*
+**Architecture Components:**
+
+- **Wazuh Dashboard:** Security monitoring and alert visualization.
+- **Wazuh Manager:** Centralized agent management and security event analysis.
+- **Wazuh Indexer:** Security event storage and indexing.
+- **Windows Endpoint:** Monitored using Wazuh Agent and Sysmon.
+- **Linux Endpoint:** Monitored using Wazuh Agent and System Logs.
+- **Suricata IDS:** Network intrusion detection and traffic analysis.
+
+*Note: This diagram represents the conceptual architecture of the SOC laboratory.*
 
 ## 🛠️ 4. Technologies & Tools
 
