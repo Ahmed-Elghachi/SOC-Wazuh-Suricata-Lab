@@ -95,11 +95,13 @@ Through this project, I developed practical knowledge in:
 
 **Ahmed ELGHACHI**
 
-Cybersecurity Master's Student | SOC & Blue Team
+Master's Graduate in Cybersecurity | SOC & Blue Team
 
-GitHub: [https://github.com/Ahmed-Elghachi](https://github.com/Ahmed-Elghachi)
+Specialized in Cyber Defense and Information Systems.
 
-Credly: [https://www.credly.com/users/ahmed-elghachi](https://www.credly.com/users/ahmed-elghachi)
+GitHub: [Ahmed-Elghachi](https://github.com/Ahmed-Elghachi)
+
+Credly: [Ahmed Elghachi](https://www.credly.com/users/ahmed-elghachi)
 
 ---
 
