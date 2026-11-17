@@ -45,7 +45,7 @@ The laboratory is designed around centralized security monitoring using Wazuh an
 The following diagram illustrates the architecture of the Security Operations Center (SOC) laboratory.
 
 <p align="center">
-  <img src="./images/architecture.png" 
+  <img src="./screenshots/architecture.png" 
        alt="SOC Wazuh and Suricata Architecture" 
        width="850">
 </p>
